@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="optionstyle.css">
+    <title>Test de Diabete</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="apropos.html">A propos de nous!</a></li>
+            <li><a href="index.html">Test de maladie</a></li>
+            <li><a href="">Connexion</a></li>
+        </ul>
+    </nav>
+    <h1>Bienvenue dans notre système expert. <br> Tester votre maladie si vous souffrez de la Diabète en cochant les cases !</h1>
+
+    <form action="">
+        <p><span>Question 1:</span> Vous avez Envie de toilette ?</p>
+        <!-- <input type="radio" name="options" id="" value="option1"> -->
+        <input type="checkbox" name="options" id="" value="option1">
+        <label for="option1">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option2"> -->
+        <input type="checkbox" name="options" id="" value="option2">
+        <label for="option2">Non</label> <br><br>
+
+        <p><span>Question 2:</span> Vous avez Soif de boire ?</p>
+        <!-- <input type="radio" name="options" id="" value="option3"> -->
+        <input type="checkbox" name="options" id="" value="option3">
+        <label for="option3">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option4"> -->
+        <input type="checkbox" name="options" id="" value="option4">
+        <label for="option4">Non</label> <br><br>
+
+        <p><span>Question 3:</span> Vous avez Besoin d'uriner ?</p>
+        <!-- <input type="radio" name="options" id="" value="option5"> -->
+        <input type="checkbox" name="options" id="" value="option5">
+        <label for="option5">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option6"> -->
+        <input type="checkbox" name="options" id="" value="option6">
+        <label for="option6">Non</label> <br><br>
+
+        <p><span>Question 4:</span> Vous avez perdu du poid ces derniers jours ?</p>
+        <!-- <input type="radio" name="options" id="" value="option7"> -->
+        <input type="checkbox" name="options" id="" value="option7">
+        <label for="option7">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option8"> -->
+        <input type="checkbox" name="options" id="" value="option8">
+        <label for="option8">Non</label> <br><br>
+
+        <p><span>Question 5:</span> Vous n'avez pas d'appetit ce dernier temps ?</p>
+        <!-- <input type="radio" name="options" id="" value="option9"> -->
+        <input type="checkbox" name="options" id="" value="option9">
+        <label for="option9">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option10"> -->
+        <input type="checkbox" name="options" id="" value="option10">
+        <label for="option10">Non</label> <br><br>
+
+        <p><span>Question 6:</span> Vous sentez la fatigue ?</p>
+        <!-- <input type="radio" name="options" id="" value="option11"> -->
+        <input type="checkbox" name="options" id="" value="option11">
+        <label for="option11">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option12"> -->
+        <input type="checkbox" name="options" id="" value="option12">
+        <label for="option12">Non</label> <br><br>
+
+        <p><span>Question 7:</span> Vous avez des Malaises ?</p>
+        <!-- <input type="radio" name="options" id="" value="option13"> -->
+        <input type="checkbox" name="options" id="" value="option13">
+        <label for="option13">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option14"> -->
+        <input type="checkbox" name="options" id="" value="option14">
+        <label for="option14">Non</label> <br><br>
+
+        <p><span>Question 8:</span> Vous avez eu une chutte en Glycemie ce dernier temps ?</p>
+        <!-- <input type="radio" name="options" id="" value="option15"> -->
+        <input type="checkbox" name="options" id="" value="option15">
+        <label for="option15">Oui</label>
+        <!-- <input type="radio" name="options" id="" value="option16"> -->
+        <input type="checkbox" name="options" id="" value="option16">
+        <label for="option16">Non</label> <br><br>
+
+        <button onclick="checkSelectedOption()">Verifier et Obtenir une recommandation</button>
+    </form>
+
+    <script>
+        function checkSelectedOption(){
+            var selectedOption = document.querySelector('input[name="options"]:checked').value;
+
+            if(selectedOption === "option1"){
+                alert("Vous avez Envie de toilette !");
+            }
+            else if(selectedOption === "option2"){
+                alert("Vous n'avez pas envie de toilette !");
+            }
+
+            if(selectedOption === "option3"){
+                alert("Vous la soif de boire !");
+            }
+            else if(selectedOption === "option4"){
+                alert("Vous n'avez pas la soif de boire !");
+            }
+
+            if(selectedOption === "option5"){
+                alert("Vous avez Envie d'uriner !");
+            }
+            else if(selectedOption === "option6"){
+                alert("Vous n'avez pas envie d'uriner !");
+            }
+
+            if(selectedOption === "option7"){
+                alert("Vous avez perdu du poid !");
+            }
+            else if(selectedOption === "option8"){
+                alert("Vous n'avez pas perdu du poid !");
+            }
+
+            if(selectedOption === "option9"){
+                alert("Vous avez l'appetit !");
+            }
+            else if(selectedOption === "option10"){
+                alert("Vous n'avez pas d'appetit !");
+            }
+
+            if(selectedOption === "option11"){
+                alert("Vous la fatigue !");
+            }
+            else if(selectedOption === "option12"){
+                alert("Vous n'avez pas la fatigue !");
+            }
+
+            if(selectedOption === "option13"){
+                alert("Vous avez une malaise !");
+            }
+            else if(selectedOption === "option14"){
+                alert("Vous n'avez pas de malaise !");
+            }
+
+            if(selectedOption === "option15"){
+                alert("Vous avez une Chutte en Glycemie !");
+            }
+            else if(selectedOption === "option16"){
+                alert("Vous n'avez pas une Chutte en Glycemie!");
+            }
+// ---------------------------------------------------------------------
+            if(selectedOption == "option1" && "option3"){
+                alert("Vous n'etes pas souffant, Vous avez juste besoin d'uriner !");
+            }
+            else if(selectedOption === "option2" && "option4"){
+                alert("Vous n'avez pas besoin d'uriner !");
+            }
+
+            if(selectedOption === "option5" && "option9"){
+                alert("Vous etes en perte de poid. veillez consulter un médecin !");
+            }
+            else if(selectedOption === "option6" && "option10"){
+                alert("Vous n'etes pas en perte de poid. Tout vas bien chez vous !");
+            }
+
+            if(selectedOption === "option7" && "option13"){
+                alert("Vous avez la fatigue. Veillez prendre des dispositions pour avoir plus de répos !");
+            }
+            else if(selectedOption === "option8" && "option14"){
+                alert("Vous n'avez pas la fatigue. tout se passe bien chez vous !");
+            }
+
+            if(selectedOption === "option11" && "option15"){
+                alert("Vous avez un diabete de type 1. veillez vous rendre à un hopital proche de chez vous, ou consultez un médecin spécialisé !");
+            }
+            else if(selectedOption === "option12" && "option16"){
+                alert("Rien à vous inquiéter, Vous n'avez pas un diabete de type 1. tout va bien de votre coté !");
+            }      
+}
+    </script>
+</body>
+</html>
